@@ -1,10 +1,55 @@
 // Your code goes here
 const banner = document.querySelector(".intro img");
 banner.addEventListener('mouseenter', ()=>{
-    banner.style.transform = "scale(1.2)"
+    banner.style.transform = "scale(1.25)"
     banner.style.transition = "all 0.3s"
 })
 banner.addEventListener('mouseleave', () =>{
     banner.style.transform = "scale(1)"
     banner.style.transition = "all 0.3s"
+})
+
+const logo = document.querySelector(".logo-heading");
+logo.addEventListener('click', ()=>{
+    logo.style.color = 'royalblue'
+})
+logo.addEventListener("dblclick", () => {
+    logo.style.color = 'black'
+})
+const onClick = event => {
+
+    event.target.style.color = 'green';
+  }
+const map = document.getElementsByClassName("img-content")
+
+
+document.addEventListener('keydown', () => {
+    map[0].style.transform = "rotate(180deg)"
+    map[0].style.transition = "all 0.3s"
+})
+
+map[1].addEventListener('mouseover', () =>{
+    map[1].style.opacity = "0.5"
+    map[1].style.transition = "all 0.3s"
+})
+
+map[1].addEventListener('mouseout', () => {
+    map[1].style.opacity = "1"
+    map[1].style.transition = "all 0.3s"
+})
+
+const boat = document.querySelector('.content-destination img');
+
+boat.addEventListener('wheel', () =>{
+    boat.style.borderRadius= "50%"
+    boat.style.transition = "all 0.3s"
+})
+boat.addEventListener('drag', () => {
+    boat.style.border = '10px solid black'
+    boat.style.transition = 'all 0.3s'
+})
+const footer = document.getElementsByClassName('footer')
+window.addEventListener('resize', () => {
+    footer[0].style.backgroundColor = 'lightgreen'
+    footer[0].style.transition = "all 3s"
 })
