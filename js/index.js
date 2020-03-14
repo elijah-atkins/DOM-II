@@ -53,3 +53,9 @@ window.addEventListener('resize', () => {
     footer[0].style.backgroundColor = 'lightgreen'
     footer[0].style.transition = "all 3s"
 })
+
+const stopNav = document.querySelector(".nav");
+stopNav.addEventListener('click', (event) =>{
+    event.preventDefault();
+    console.log('stopped!')
+})
