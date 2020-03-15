@@ -59,3 +59,16 @@ stopNav.addEventListener('click', (event) =>{
     event.preventDefault();
     console.log('stopped!')
 })
+const color = (color) =>{
+    
+}
+const destination = document.querySelector(".destination");
+destination.addEventListener('click', () =>{
+    destination.style.backgroundColor = 'lightgreen'
+})
+
+const button = document.querySelector(".btn");
+button.addEventListener('click', (event) => {
+    button.style.backgroundColor = 'darkgreen'
+    event.stopPropagation();
+})
