@@ -62,13 +62,29 @@ stopNav.addEventListener('click', (event) =>{
 const color = (color) =>{
     
 }
-const destination = document.querySelector(".destination");
-destination.addEventListener('click', () =>{
-    destination.style.backgroundColor = 'lightgreen'
-})
+// 
+// const destination = document.querySelector(".destination");
+// destination.addEventListener('click', () =>{
+//     destination.style.backgroundColor = 'lightgreen'
+// })
 
-const button = document.querySelector(".btn");
-button.addEventListener('click', (event) => {
-    button.style.backgroundColor = 'darkgreen'
-    event.stopPropagation();
-})
+// const button = document.querySelector(".btn");
+// button.addEventListener('click', (event) => {
+//     buttonc
+//     event.stopPropagation();
+// })
+
+const destination = document.getElementsByClassName("destination");
+for (let i = 0; i < destination.length; i++) {
+    destination[i].addEventListener('click', ()=>{
+        destination[i].style.backgroundColor = 'lightgreen';
+    })
+}
+
+const button = document.getElementsByClassName("btn");
+for (let i =0; i< destination.length; i++){
+    button[i].addEventListener('click', () => {
+        button[i].style.backgroundColor = 'darkgreen';
+        event.stopPropagation();
+    })
+}
