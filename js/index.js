@@ -50,7 +50,7 @@ boat.addEventListener('drag', () => {
 })
 const footer = document.getElementsByClassName('footer')
 window.addEventListener('resize', () => {
-    footer[0].style.backgroundColor = 'lightgreen'
+    footer[0].style.backgroundColor = 'orange'
     footer[0].style.transition = "all 3s"
 })
 
@@ -59,9 +59,7 @@ stopNav.addEventListener('click', (event) =>{
     event.preventDefault();
     console.log('stopped!')
 })
-const color = (color) =>{
-    
-}
+
 // 
 // const destination = document.querySelector(".destination");
 // destination.addEventListener('click', () =>{
